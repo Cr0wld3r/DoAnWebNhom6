@@ -1,0 +1,26 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% block content%}
+    <div class = "list-congty">
+        <div class = "list-congty-header" style="text-align: center;">
+            <h1 class = "tittle">DANH SÁCH CÁC CÔNG TY</h1>
+        </div>
+
+        <div class ="list-congty-body">
+            {% for c in  Companies %}
+            <ul>
+                <li>
+                    <div class ="congty-logo" >
+                            <img src="{{c.image.url}}" alt="FPT">
+                    </div>
+                    <div class = "congty-content" >
+                        <h2><a href="/company/{{c.id}}" class = "congty-name">{{c.title}}</a></h2>
+                        <p>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock%}

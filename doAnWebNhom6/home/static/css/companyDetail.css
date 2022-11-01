@@ -1,0 +1,15 @@
+.company-detail-img{
+   
+}
+
+.company-detail{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-detail-description{
+   
+    margin-left: 20px;
+}

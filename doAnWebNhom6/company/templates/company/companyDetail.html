@@ -1,0 +1,12 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% block content%}
+<div class = "company-detail-header" style="text-align: center;">
+            <h1 class = "tittle">{{detail.title}}</h1>
+        </div>
+    <div class = "company-detail">
+        <img class="company-detail-img" src="{{detail.image.url}}" width="500px" height="300px" />
+        <h3 class="company-detail-description">{{detail.description}}</h3>
+{{post.body|safe|linebreaks}}
+    </div>
+{% endblock%}

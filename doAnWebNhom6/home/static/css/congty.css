@@ -1,0 +1,26 @@
+.list-congty a{
+    text-decoration:none;
+}
+.list-congty .list-congty-body li{
+    /* background-color: red; */
+    list-style-type: none;
+    display: flex ;
+    margin-bottom: 15px;    
+}
+
+.list-congty-body .congty-logo img{
+    width: 200px;
+    height: 100px;
+    /* background-color: gray; */
+}
+
+.list-congty-body .congty-content {
+    /* background-color: red; */
+    margin-left: 10px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.list-congty-body li:hover{
+    border: 2px outset ;
+}

@@ -1,0 +1,33 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% block content%}
+        <div class="search-container" style="background-image: url( {% static 'img/background/purple.png' %} )">
+            <div class="inner-search">
+            <form action="/action_page.php">
+                <h1>
+                    Hãy tự tin tìm cho mình công việc màu hường
+                </h1>
+                <input type="text" placeholder="Tìm việc bạn muốn làm ở đây" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form></div>
+    </div>
+    <div class="home">
+      <div class="home_container">
+        <h2>Các công ty tuyển dụng hàng đầu trên WhereCV</h2>
+        <div class="home_itemRow">
+            {% for company in CompanyHomePageDisplay %}
+           <div className="company">   
+            <img src="{{company.image.url}}" width="500px" height="300px" />
+             </div>
+             {% endfor %}
+        </div>
+        <div class="home_itemRow">
+         
+        </div>
+        <div class="home_itemRow">
+         
+          
+        </div>
+      </div>
+    </div>
+{% endblock%}
